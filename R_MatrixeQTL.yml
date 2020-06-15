@@ -1,0 +1,10 @@
+ name: R_MatrixeQTL
+ channels:
+   - conda-forge
+   - defaults
+ dependencies:
+   - conda-forge::r-base=3.6.2
+   - conda-forge::libblas=3.8.0=15_mkl
+   - conda-forge::r-matrixeqtl=2.3
+   - r-naniar=0.4.2
+   - r-dplyr=0.8.5
