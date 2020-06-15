@@ -1,0 +1,8 @@
+Covariates_forMatrixeQTL_100samples_April7.txt	G	normVSTsamples100.txt	yes	10	samples100
+Covariates_forMatrixeQTL_300samples_April7.txt	G	vst300samples_April7.txt	no	10	samples300
+Covariates_forMatrixeQTL_500samples_April7.txt	G	vst500samples_April7.txt	no	10	samples500
+Covariates_forMatrixeQTL_700samples_April7.txt	G	vst700samples_April7.txt	no	10	samples700
+Covariates_forMatrixeQTL_100samples_April7.txt	GxE	normVSTsamples100.txt	yes	10	samples100gxe
+Covariates_forMatrixeQTL_300samples_April7.txt	GxE	normVSTsamples300.txt	yes	10	samples300gxe
+Covariates_forMatrixeQTL_500samples_April7.txt  GxE     normVSTsamples500.txt   yes     10      samples500gxe
+Covariates_forMatrixeQTL_700samples_April7.txt  GxE     normVSTsamples700.txt   yes     10      samples700gxe
