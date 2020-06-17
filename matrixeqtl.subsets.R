@@ -40,11 +40,11 @@ cat ('covfree analysis :' , covfree, "\n")
 
     cat("number of samples to process: ", length(colnames(cvrt)), "\n")
 
-    c <- as.data.frame(colnames(cvrt))
-    c <- gsub("_", " ", c$`colnames(cvrt)`)
+   # c <- as.data.frame(colnames(cvrt))
+   # c <- gsub("_", " ", c$`colnames(cvrt)`)
 
-    cat ("writing indtokeep file\n")
-    write.table(c, paste("indtokeep", file, ".txt", sep=""), col.names = F, row.names = F, quote=F)
+   # cat ("writing indtokeep file\n")
+   # write.table(c, paste("indtokeep", file, ".txt", sep=""), col.names = F, row.names = F, quote=F)
     
   # load gene expression data and subset samples (this table is universal)
   # use matrixeQTL loading to make it faster
@@ -118,6 +118,12 @@ cat ('covfree analysis :' , covfree, "\n")
 		         gene$ColumnSubsample(c)
 		
 	cat ('after matching genotype with phenotype file, number of individuals in analysis: ', ncol(cvrt), "\n") 		
+	c <- as.data.frame(colnames(cvrt))
+   	c <- gsub("_", " ", c$`colnames(cvrt)`)
+	cat ("writing indtokeep file\n")
+	write.table(c, paste("indtokeep", file, ".txt", sep=""), col.names = F, row.names = F, quote=F)
+
+
 
     # filter SNPs based on MAF 5% given the subset of samples to be used
     # maf will have to be calculated again for each subset make sure to print how many snps are used
